@@ -9,7 +9,4 @@ urlpatterns = [
     path("logout", views.logout, name="logout"),
     path('directory_sync_data/', directory_sync_data, name='directory_sync_data'),
 
-   # path('directory_sync_data/', views.directory_sync_data, name='directory_sync_data'),
-#    path('sso/authorize/', views.authorize_view, name='authorize'),
-
 ]
