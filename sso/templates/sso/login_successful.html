@@ -1,0 +1,59 @@
+{% load static %}
+
+<html>
+<head>
+    <!-- Include the CSS file from the 'static' directory -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+
+    <!-- Include the Inter font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+</head>
+<body class="container_success">
+    <!-- Navigation Bar -->
+    <div class="logged_in_nav">
+        <div class="flex">
+            <div>
+                <!-- WorkOS logo -->
+                <img src="{% static 'images/workos-logo-with-text.png' %}" alt="workos logo" />
+            </div>
+        </div>
+        <div class="flex">
+            <!-- Links to external resources -->
+            <a href="https://workos.com/docs" target="_blank"><button class="button nav-item">Documentation</button></a>
+            <a href="https://workos.com/docs/reference" target="_blank"><button class="button nav-item">API Reference</button></a>
+            <a href="https://workos.com/blog" target="_blank"><button class="button nav-item blog-nav-button">Blog</button></a>
+            <a href="https://workos.com/" target="_blank"><button class="button button-outline">WorkOS</button></a>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="logged_in_div_right">
+            <div class="flex_column">
+                <div class="flex width-941px space-between">
+                    <div>
+                        <br>
+                        <!-- Display the user's first name -->
+                        <h2>Welcome {{first_name}} </h2> <br><br>
+                    </div>
+                    <!-- Log out button -->
+                    <a href="/logout"><button class="button button-outline">Log Out</button></a>
+                </div>
+                <div>
+                    <!-- Display the raw profile information -->
+                    <pre id="noborder" class="prettyprint noborder">{{ raw_profile }}</pre >
+                </div>
+                <div class="flex">
+                    <!-- Button to trigger directory sync data action -->
+                    <a href="{% url 'directory_sync_data' %}" target="_blank">
+                        <button class="button button-outline">Directory Sync Data</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the Google Code Prettify script for code formatting -->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
+

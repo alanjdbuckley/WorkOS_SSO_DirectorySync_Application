@@ -1,0 +1,92 @@
+{% load static %}
+
+<html>
+<head>
+  <!-- Include the CSS file from the 'static' directory -->
+  <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+  <!-- Include the Inter font from Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+  <style>
+    /* Define custom CSS styles */
+    .table-container {
+      padding: 20px; /* Add padding around the table */
+    } 
+    table {
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left; /* Align content to the left within cells */
+    }
+    th {
+      background-color: #f2f2f2; /* Add a background color to header cells */
+    }
+  </style>
+</head>
+<body class="container_success">
+
+  <!-- Navigation Bar -->
+  <div class="logged_in_nav">
+    <div class="flex">
+      <!-- WorkOS logo -->
+      <img src="{% static 'images/workos-logo-with-text.png' %}" alt="workos logo" />
+    </div>
+    <div class="flex">
+      <!-- Links to external resources -->
+      <a href="https://workos.com/docs" target="_blank">
+        <button class="button nav-item">Documentation</button>
+      </a>
+      <a href="https://workos.com/docs/reference" target="_blank">
+        <button class="button nav-item">API Reference</button>
+      </a>
+      <a href="https://workos.com/blog" target="_blank">
+        <button class="button nav-item blog-nav-button">Blog</button>
+      </a>
+      <a href="https://workos.com/" target="_blank">
+        <button class="button button-outline">WorkOS</button>
+      </a>
+      <a href="/logout">
+        <button class="button button-outline">Log Out</button>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <h1>Directory Sync Data</h1>
+    <div class="table-container">
+      <!-- Create a table for displaying data -->
+      <table>
+        <thead>
+          <tr>
+            <!-- Define table headers -->
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>State</th>
+            <th>Directory ID</th>
+            <!-- Add more table headers for other data fields if needed -->
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in data.data %}
+          <tr>
+            <!-- Populate table cells with data from the 'user' object -->
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.state }}</td>
+            <td>{{ user.id}}</td>
+            <!-- Add more table cells for other data fields if needed -->
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Include the Google Code Prettify script for code formatting -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
+
