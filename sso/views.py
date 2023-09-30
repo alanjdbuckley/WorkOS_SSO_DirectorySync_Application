@@ -17,7 +17,7 @@ workos.base_api_url = (
 
 # Constants
 # Required: Fill in CUSTOMER_ORGANIZATION_ID for the desired organization from the WorkOS Dashboard
-CUSTOMER_ORGANIZATION_ID = "org_01HB3XGX19T4PWXWEGN4W11B7A"
+CUSTOMER_ORGANIZATION_ID = "INPUT_ORG_ID_HERE"
 REDIRECT_URI = os.getenv("REDIRECT_URI")
 
 # Render the login page
@@ -50,9 +50,9 @@ workos.client_id = settings.WORKOS_CLIENT_ID
 # Retrieve directory sync data from the WorkOS API
 def directory_sync_data(request):
     # Make the API call
-    api_url = "https://api.workos.com/directory_users?directory=directory_01HB8S53EHXD314XA7XAGYMF65"
+    api_url = "https://api.workos.com/directory_users?directory=INPUT_DIRECTORY_ID_HERE"
     headers = {
-        "Authorization": "Bearer sk_test_a2V5XzAxSEIzWEQwM0hBUU5WRFBTN1paS1I1SjQwLDhxalFhVlZxVFExdVptMVpBNnNDU1dqSHE"
+        "Authorization": "Bearer INPUT BEARER TOKEN HERE"
     }
     
     try:
