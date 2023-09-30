@@ -1,7 +1,7 @@
 # WorkOS_SSO_DirectorySync_Application
 An SSO and directory sync application setup with Okta and synced with WorkOS
 
-**WorkOS Django SSO Example**
+**WorkOS Django SSO and Directory Sync Example**
 
 **Prerequisites**
 
