@@ -16,14 +16,7 @@ Before setting up and running this Django application for Single Sign-On (SSO) a
 
    ```bash
    # HTTPS
-   $ git clone https://github.com/workos/python-django-example-applications.git
-   ```
-
-   or
-
-   ```bash
-   # SSH
-   $ git clone git@github.com:workos/python-django-example-applications.git
+   $ git [clone https://github.com/workos/python-django-example-applications.git](https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application.git)
    ```
 
 2. Navigate to the "python-django-sso-example" directory within the cloned repository:
