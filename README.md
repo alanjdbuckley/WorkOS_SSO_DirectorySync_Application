@@ -151,20 +151,20 @@ Before setting up and running this Django application for Single Sign-On (SSO) a
 
 1. Navigate to "http://localhost:8000" and select Enterprise SAML 
 
-<img width="1724" alt="Login" src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/5e3a3097-0015-49e0-965a-bd732a2494b0">
+<img width="1724" alt="Login" src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/145c5145-e6af-4fcf-af09-ce80c1282165">
 
 
 2. Okta Verification 
 
-<img width="588" alt="Okta Sign In " src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/73f2c8c3-7ed2-468a-bba8-a972e06c1887">
+<img width="588" alt="Okta Sign In " src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/713c6fed-9e99-42bf-9f98-b4b3d044e90b">
 
 
 3. Welcome Screen showing your details from the IDP. Then click on the "Directory Sync Data" button
-<img width="1709" alt="Welcome Page with Name" src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/049acce1-96b8-48e6-8be6-aab2d0b594d1">
 
+<img width="1709" alt="Welcome Page with Name" src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/42d09353-df80-40ab-8a99-a64ccd3a0fbc">
 
 4. Directory Sync Data 
-<img width="1715" alt="Directoey Sync Data" src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/8440aaeb-dfe8-4946-8d68-7ec2a606f4e0">
 
+<img width="1715" alt="Directoey Sync Data" src="https://github.com/alanjdbuckley/WorkOS_SSO_DirectorySync_Application/assets/146522264/1d3f6143-75b4-455f-a6c0-62c298de6685">
 
 Congratulations! You've successfully set up and tested the SSO and Directory Sync applicatiopn using the WorkOS Python SDK with this Django example application.
