@@ -22,7 +22,7 @@ Before setting up and running this Django application for Single Sign-On (SSO) a
 2. Navigate to the "WorkOS_SSO_DirectorySync_Application" directory within the cloned repository:
 
    ```bash
-   $ cd python-django-example-applications/python-django-sso-example
+   $ cd /WorkOS_SSO_DirectorySync_Application
    ```
 
 3. Create and activate a Python virtual environment:
